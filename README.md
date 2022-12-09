@@ -1,7 +1,7 @@
 # Info
 
 This project is a fork from https://github.com/aerokube/images.
-In the current project the buiding of the yandex-browser image has beenchanged so that the image is built with the [chromedriver](https://chromedriver.storage.googleapis.com/index.html) instead of [YandexDriver](https://github.com/yandex/YandexDriver).
+In the current project the buiding of the yandex-browser image has been changed so that the image is built with the [chromedriver](https://chromedriver.storage.googleapis.com/index.html) instead of [YandexDriver](https://github.com/yandex/YandexDriver).
 
 # Example:
 

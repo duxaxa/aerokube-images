@@ -1,22 +1,17 @@
-# Browser Images
-[![Build Status](https://github.com/aerokube/images/workflows/build/badge.svg)](https://github.com/aerokube/images/actions?query=workflow%3Abuild)
-[![Release](https://img.shields.io/github/release/aerokube/images.svg)](https://github.com/aerokube/images/releases/latest)
+# Info
 
-This repository contains [Docker](http://docker.com/) build files to be used for [Selenoid](http://github.com/aerokube/selenoid) and [Moon](http://github.com/aerokube/moon) projects. You can find prebuilt images [here](https://hub.docker.com/u/selenoid/).
+This project is a fork from https://github.com/aerokube/images.
+In the current project the buiding of the yandex-browser image has beenchanged so that the image is built with the [chromedriver](https://chromedriver.storage.googleapis.com/index.html) instead of [YandexDriver](https://github.com/yandex/YandexDriver).
 
-## Download Statistics
+# Example:
 
-### Firefox: [![Firefox Docker Pulls](https://img.shields.io/docker/pulls/selenoid/firefox.svg)](https://hub.docker.com/r/selenoid/firefox)
+```sh
+./images yandex \
+-b 22.11.0.2484-1 \
+-d 106.0.5249.61 \
+-t my/yandex-browser:22.11.0.2484-1
+```
 
-### Chrome: [![Chrome Docker Pulls](https://img.shields.io/docker/pulls/selenoid/chrome.svg)](https://hub.docker.com/r/selenoid/chrome)
-
-### Opera: [![Opera Docker Pulls](https://img.shields.io/docker/pulls/selenoid/opera.svg)](https://hub.docker.com/r/selenoid/opera)
-
-### Android: [![Android Docker Pulls](https://img.shields.io/docker/pulls/selenoid/android.svg)](https://hub.docker.com/r/selenoid/android)
-
-## Building Images
+## Building Images (Aerocube official documentation)
 
 Moved to: http://aerokube.com/images/latest/#_building_images
-
-## Image information
-Moved to: http://aerokube.com/images/latest/#_browser_image_information

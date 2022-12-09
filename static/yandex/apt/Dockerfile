@@ -10,5 +10,6 @@ RUN  \
         apt-get update && \
         apt-get -y --no-install-recommends install yandex-browser-stable=$VERSION && \
         yandex-browser --version && \
+        ln -s /usr/bin/yandex-browser /usr/bin/google-chrome && \
         rm /etc/apt/sources.list.d/yandex-browser.list && \
         rm -Rf /tmp/* && rm -Rf /var/lib/apt/lists/*

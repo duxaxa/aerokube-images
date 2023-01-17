@@ -5,7 +5,7 @@ ARG VERSION=19.4.2.698-1
 LABEL browser=yandex-browser-stable:$VERSION
 
 RUN  \
-        curl -v https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG | apt-key add - || \
+        # curl -v https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG | apt-key add - || \
         curl -v https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG -o /etc/apt/trusted.gpg.d//YANDEX-BROWSER-KEY.asc && \
         echo 'deb [arch=amd64] https://repo.yandex.ru/yandex-browser/deb stable main' > /etc/apt/sources.list.d/yandex-browser.list && \
         apt-get update && \
